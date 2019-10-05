@@ -5,24 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
   <title>Mirror in mirror</title>
-  <link rel="icon" href="./images/favicon.ico">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docute@3.4.12/dist/docute.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docute@3.4.12/dist/theme-github.css" />
-  <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126485680-2"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-126485680-2');
+    gtag('config', '');
   </script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+  <style>
+    body {
+      text-rendering: auto;
+    }
+    #evanyou-canvas {
+      z-index: -1 !important;
+    }
+    .aplayer-wrap {
+      max-width: 700px;
+      margin: 20px 0;
+    }
+    .sidebar-toggle {
+      z-index: 90;
+    }
+  </style>
 </head>
 <body>
   <!-- don't remove this part start -->
@@ -33,9 +45,5 @@
   <script src="./config.js"></script>
   <!-- livereload script placeholder -->
   <!-- don't remove this part end -->
-
-  <footer class="footer">
-    <small>&copy; 2019 <a href="http://white-album.top/">White Album</a> Made ❤ by <a href="https://github.com/jamesyangget/">james Yang</a></small>
-  </footer>
 </body>
 </html>

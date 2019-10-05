@@ -1,6 +1,4 @@
 ---
-nav: zh-Hans
-search: zh-Hans
+search: english
 ---
 
-# 无可奉告
