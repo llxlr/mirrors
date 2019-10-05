@@ -1,5 +1,5 @@
 const langs = [
-    { title: '简体中文', path: '/', matchPath: /^\/(home|support)/ },
+    { title: '简体中文', path: '/', matchPath: /^\/(\/|support)/ },
     { title: 'English', path: '/en-us/', matchPath: /^\/en-us/ },
 ];
 
