@@ -1,37 +1,33 @@
 const langs = [
-    { title: 'English', path: '/home', matchPath: /^\/(home|support)/ },
-    { title: '简体中文', path: '/zh-Hans/', matchPath: /^\/zh-Hans/ },
+    { title: '简体中文', path: '/home', matchPath: /^\/(home|support)/ },
+    { title: 'English', path: '/en-us/', matchPath: /^\/en-us/ },
 ];
 
 docute.init({
     landing: 'landing.html',
-    title: 'mirrors',
+    title: 'Mirror in mirror',
     repo: 'jamesyangget/mirrors',
     twitter: 'james_ya_',
-    'edit-link': 'https://github.com/jamesyangget/mirrors/blob/master/',
+    'edit-link': 'https://github.com/jamesyangget/mirrors/tree/master/',
     nav: {
-        default: [
-            {
-                title: 'Home', path: '/home'
-            },
-            {
-                title: 'Support APlayer', path: '/support'
-            },
-            {
-                title: 'Languages', type: 'dropdown', items: langs
-            }
-        ],
-        'zh-Hans': [
-            {
-                title: '首页', path: '/zh-Hans/'
-            },
-            {
-                title: '支持 APlayer', path: '/zh-Hans/support'
-            },
-            {
-                title: '选择语言', type: 'dropdown', items: langs
-            }
-        ],
+        default: [{
+            title: '首页', path: '/home'
+        },
+        {
+            title: '支持 Mirror in mirror', path: '/support'
+        },
+        {
+            title: '选择语言', type: 'dropdown', items: langs
+        }],
+        'en-us': [{
+            title: 'Home', path: '/en-us/'
+        },
+        {
+            title: 'Support Mirror in mirror', path: '/en-us/support'
+        },
+        {
+            title: 'Languages', type: 'dropdown', items: langs
+        }],
     },
     plugins: [
         docsearch({
@@ -40,6 +36,6 @@ docute.init({
             tags: ['english', 'zh-Hans'],
             url: 'https://mirrors.js.org'
         }),
-        evanyou(),
+        evanyou()
     ]
 });
