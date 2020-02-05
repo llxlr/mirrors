@@ -3,7 +3,7 @@ docute.init({
     title: 'Mirror in mirror',
     repo: 'jamesyangget/mirrors',
     twitter: 'james_ya_',
-    'edit-link': 'https://github.com/jamesyangget/mirrors/tree/master/',
+    'edit-link': 'https://github.com/jamesyangget/mirrors/blob/master/',
     nav: {
         default: [{
             title: '首页', path: '/'
